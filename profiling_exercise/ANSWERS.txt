@@ -1,0 +1,5 @@
+a) Most of the time is spent in the function that carries out the operation. By running the line profiler result[i][j] += X[i][k] * Y[k][j] is the line of code that accounts for most of the time spent.
+
+b) The function fast_phi is the one that takes the longest to solve. 87% of its time goes into the factorize functorize function. Therefore this would be the first portion of code to look into for optimization. In particular while(n%p == 0): and if(p > sqrt(n)): take 30% and 28% of the time respectively.
+
+c)
